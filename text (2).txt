@@ -1,0 +1,122 @@
+1) function rectangle(x,y){
+    return ("Area is: "+x*y+" and perimeter is: "+2*(x+y));
+}
+const prompt=require("prompt-sync")();
+const x=parseInt(prompt("Enter x"))
+const y=parseInt(prompt("Enter y"))
+console.log(rectangle(x,y));
+
+2) const rectangle = (length, width) => {
+    const area = length * width;
+    const perimeter = 2 * (length + width);
+
+    console.log("Rectangle Area:", area);
+    console.log("Rectangle Perimeter:", perimeter);
+};
+const prompt=require("prompt-sync")();
+const x=parseInt(prompt("Enter x"))
+const y=parseInt(prompt("Enter y"))
+console.log(rectangle(x,y));
+
+3) const rectangle = function(length, width) {
+    const area = length * width;
+    const perimeter = 2 * (length + width);
+
+    console.log("Rectangle Area:", area);
+    console.log("Rectangle Perimeter:", perimeter);
+};
+const prompt=require("prompt-sync")();
+const x=parseInt(prompt("Enter x"))
+const y=parseInt(prompt("Enter y"))
+console.log(rectangle(x,y));
+
+4) const rectangle = function calcRectangleAreaPerimeter(length, width) {
+    const area = length * width;
+    const perimeter = 2 * (length + width);
+
+    console.log("Rectangle Area:", area);
+    console.log("Rectangle Perimeter:", perimeter);
+};
+const prompt=require("prompt-sync")();
+const x=parseInt(prompt("Enter x"))
+const y=parseInt(prompt("Enter y"))
+console.log(rectangle(x,y));
+
+
+
+5) const dateformat=(date)=>{
+days=["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+const day=days[date.getDay()];
+let hours = date.getHours();
+let minutes = date.getMinutes();
+let seconds = date.getSeconds();
+const ampm = hours >= 12 ? "PM" : "AM";
+hours = hours % 12;
+minutes = minutes < 10 ? "0" + minutes : minutes;
+seconds = seconds < 10 ? "0" + seconds : seconds;
+console.log("Today is:"+day);
+console.log("Current time is:"+hours + ":" + minutes + ":" + seconds + " " + ampm )
+};
+const date = new Date();
+dateformat(date);
+
+6) const dateformat=function(date){
+    days=["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    const day=days[date.getDay()];
+    let hours = date.getHours();
+    let minutes = date.getMinutes();
+    let seconds = date.getSeconds();
+    const ampm = hours >= 12 ? "PM" : "AM";
+    hours = hours % 12;
+    minutes = minutes < 10 ? "0" + minutes : minutes;
+    seconds = seconds < 10 ? "0" + seconds : seconds;
+    console.log("Today is:"+day);
+    console.log("Current time is:"+hours + ":" + minutes + ":" + seconds + " " + ampm )
+    };
+    const date = new Date();
+    dateformat(date);
+
+7) const dateformat=function dateformat1(date){
+    days=["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    const day=days[date.getDay()];
+    let hours = date.getHours();
+    let minutes = date.getMinutes();
+    let seconds = date.getSeconds();
+    const ampm = hours >= 12 ? "PM" : "AM";
+    hours = hours % 12;
+    minutes = minutes < 10 ? "0" + minutes : minutes;
+    seconds = seconds < 10 ? "0" + seconds : seconds;
+    console.log("Today is:"+day);
+    console.log("Current time is:"+hours + ":" + minutes + ":" + seconds + " " + ampm )
+    };
+    const date = new Date();
+    dateformat(date);
+
+
+8) const ddmmyy=(date)=>{
+console.log(parseInt(date.getMonth()+1)+"/"+date.getDate()+"/"+date.getFullYear())
+console.log(parseInt(date.getMonth()+1)+"-"+date.getDate()+"-"+date.getFullYear())
+console.log(date.getDate()+"/"+parseInt(date.getMonth()+1)+"/"+date.getFullYear())
+console.log(date.getDate()+"-"+parseInt(date.getMonth()+1)+"-"+date.getFullYear())
+};
+const date = new Date();
+ddmmyy(date);
+
+9) const ddmmyy=function(date){
+    console.log(parseInt(date.getMonth()+1)+"/"+date.getDate()+"/"+date.getFullYear())
+    console.log(parseInt(date.getMonth()+1)+"-"+date.getDate()+"-"+date.getFullYear())
+    console.log(date.getDate()+"/"+parseInt(date.getMonth()+1)+"/"+date.getFullYear())
+    console.log(date.getDate()+"-"+parseInt(date.getMonth()+1)+"-"+date.getFullYear())
+    };
+    const date = new Date();
+    ddmmyy(date);
+
+10) const ddmmyy=function ddmmyy1(date){
+    console.log(parseInt(date.getMonth()+1)+"/"+date.getDate()+"/"+date.getFullYear())
+    console.log(parseInt(date.getMonth()+1)+"-"+date.getDate()+"-"+date.getFullYear())
+    console.log(date.getDate()+"/"+parseInt(date.getMonth()+1)+"/"+date.getFullYear())
+    console.log(date.getDate()+"-"+parseInt(date.getMonth()+1)+"-"+date.getFullYear())
+    };
+    const date = new Date();
+    ddmmyy(date);
+    
